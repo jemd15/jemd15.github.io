@@ -1,0 +1,17 @@
+{
+  "name": "Portafolio",
+  "homepage": "https://github.com/jemd15/Portafolio",
+  "authors": [
+    "JEMD <x_jemd_x@hotmail.com>"
+  ],
+  "description": "portafolio frontend y de desarrollo",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
