@@ -69,3 +69,24 @@ footer p {
 #twitter h2{
     margin-bottom: -10%;
 }
+div.indicator{
+    position: relative !important;
+}
+.tabs{
+    height: auto;
+}
+div.row.card-action.white{
+    margin: 0 !important;
+}
+.input-field input[type=text].valid {
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 0 whitesmoke;
+}
+.input-field input[type=text]:focus + label, .input-field label, .input-field i.material-icons.prefix,
+.input-field textarea.materialize-textarea:focus + label{ /*label de los inputs con y sin focus*/
+    color: white;
+}
+.input-field input[type=text]:focus,  .input-field input[type=text], .input-field textarea:focus{ /*lineas de los inputs con y sin focus*/
+    border-bottom: 1px solid white;
+    box-shadow: 0 1px 0 0 whitesmoke;
+}
