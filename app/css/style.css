@@ -11,11 +11,11 @@ nav{
     border-top: 5px;
     background-color: rgba(0, 0, 0, 0.5);
 }
+nav{
+    font-size: 20px !important;
+}
 li.active{
     background-color: #e65100 !important;
-}
-card{
-    color: black;
 }
 img.circle.responsive-img {
     width: 18%;
@@ -40,9 +40,6 @@ header p{
     background-color: #e65100;
     border-radius: 4px;
     line-height: 1;
-}
-header nav ul {
-
 }
 div#footer{
     position: relative;
@@ -86,7 +83,26 @@ div.row.card-action.white{
 .input-field textarea.materialize-textarea:focus + label{ /*label de los inputs con y sin focus*/
     color: white;
 }
-.input-field input[type=text]:focus,  .input-field input[type=text], .input-field textarea:focus{ /*lineas de los inputs con y sin focus*/
+.input-field input[type=text]:focus,  .input-field input[type=text],
+.input-field textarea.material-icons[type=text]:focus, .input-field textarea.material-icons[type=text]{ /*lineas de los inputs con y sin focus*/
     border-bottom: 1px solid white;
     box-shadow: 0 1px 0 0 whitesmoke;
+}
+hr{
+    margin-top: 1px;
+}
+div.subtitulo, h2.subtitulo{
+    text-align: left;
+}
+p#texto-email{
+    font-size: 22px !important;
+}
+#tab-curriculum button{
+    margin: 3px 0;
+}
+p.contacto{
+    font-size: 18px;
+}
+ul.timeline span, ul.timeline {
+    float: left;
 }

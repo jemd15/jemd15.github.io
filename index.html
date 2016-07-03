@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="app/lib/Materialize/dist/css/materialize.min.css">
     <link rel="stylesheet" href="app/lib/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="app/lib/animate.css/animate.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="app/css/style.css">
     <title>Javier Muñoz Portafolio</title>
 </head>
@@ -17,16 +18,16 @@
         <div class="perfil">
             <img src="app/images/perfil.jpg" class="circle responsive-img animated" alt="">
             <h4 data-unsp-sanitized="clean" class="text-white">Javier Muñoz</h4>
-            <p>Desarrollador Frontend/Apps</p>
+            <p class="waves-effect waves-orange">Desarrollador Frontend/Apps</p>
         </div>
         <hr>
         <!--navbar tab-->
         <nav>
             <div class="nav-wrapper">
                 <ul  class="center container">
-                    <li id="sobre-mi" class="active"><a class="active waves-effect waves-orange" data-unsp-sanitized="clean">Sobre mí</a></li>
-                    <li id="curriculum"><a class="waves-effect waves-orange" data-unsp-sanitized="clean">Currículum</a></li>
-                    <li id="contacto"><a class="waves-effect waves-orange" data-unsp-sanitized="clean">Contacto</a></li>
+                    <li id="sobre-mi" class="active"><a class="active waves-effect waves-orange" data-unsp-sanitized="clean"><h5>Sobre mí</h5></a></li>
+                    <li id="curriculum"><a class="waves-effect waves-orange" data-unsp-sanitized="clean"><h5>Currículum</h5></a></li>
+                    <li id="contacto"><a class="waves-effect waves-orange" data-unsp-sanitized="clean"><h5>Contacto</h5></a></li>
                 </ul>
             </div>
         </nav>
@@ -124,19 +125,171 @@
 
     <!--Tab Curriculum-->
     <div id="tab-curriculum" class="hide container">
-        <section>
-
+        <section class="row section center animated bounceInDown">
+            <article class="col s12 m12">
+                <div class="row subtitulo">
+                    <i class="fa fa-file-text-o orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
+                    <span class="flow-text orange-text"><strong> Todo acerca de mí</strong></span>
+                </div>
+                <h2 class="flow-text">Bienvenido a mí línea de tiempo. Mi <strong class="orange-text">experiencia de trabajo</strong>
+                y <strong class="orange-text">educación</strong> se explican detalladamente aquí. Tómese un momento para revisarlo!</h2>
+            </article>
+        </section>
+        <section class="row section center">
+            <article class="col s12 m4">
+                <div class="row animated bounceInLeft">
+                    <i class="fa fa-file-text-o orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
+                    <span class="flow-text orange-text"><strong> Descarga mi CV</strong></span>
+                    <p class="flow-text">Si gustas, puedes descargar mi currículum</p>
+                    <button class="btn orange darken-4">DESCARGAR CV</button>
+                </div>
+                <div class="row animated bounceInLeft">
+                    <i class="fa fa-linkedin-square orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
+                    <span class="flow-text orange-text"><strong> Perfil de LINKEDIN</strong></span>
+                    <p class="flow-text">Puedes ver mi perfil de Linkedin</p>
+                    <button class="btn orange darken-4">PERFIL LINKEDIN</button>
+                </div>
+                <div class="row animated bounceInLeft">
+                    <i class="fa fa-cogs orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
+                    <span class="flow-text orange-text"><strong> Habilidades de Programación</strong></span>
+                    <p class="flow-text"></p>
+                    <button class="btn orange darken-4">HTML5</button>
+                    <button class="btn orange darken-4">JQUERY</button>
+                    <button class="btn orange darken-4">JAVA</button>
+                    <button class="btn orange darken-4">C#</button>
+                    <button class="btn orange darken-4">ARDUINO</button>
+                    <button class="btn orange darken-4">CSS3</button>
+                    <button class="btn orange darken-4">GIT</button>
+                    <button class="btn orange darken-4">MYSQL</button>
+                    <button class="btn orange darken-4">LINUX</button>
+                </div>
+                <div class="row animated bounceInLeft">
+                    <i class="fa fa-star orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
+                    <span class="flow-text orange-text"><strong> Habilidades Personales</strong></span>
+                    <p class="flow-text"></p>
+                    <button class="btn orange darken-4">LÍDER</button>
+                    <button class="btn orange darken-4">TRABAJO EN EQUIPO</button>
+                    <button class="btn orange darken-4">CREATIVO</button>
+                    <button class="btn orange darken-4">RESPONSABLE</button>
+                    <button class="btn orange darken-4">ORDENADO</button>
+                </div>
+            </article>
+            <article class="col s12 m8">
+                <div class="subtitulo">
+                    <h2 class="header indigo-text lighten-1 section-title" data-unsp-sanitized="clean">
+                        <span><i class="mdi-social-school"></i>Línea de Tiempo</span>
+                    </h2>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <time class="time">
+                            <span>octubre 2013</span>
+                            <span></span>
+                        </time>
+                        <div class="icon fa fa-globe"></div>
+                        <div class="card-panel orange darken-4">
+                            <h2 class="subtitulo">titulo</h2>
+                            <hr>
+                            <p class="flow-text">
+                                I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                                I am similar to what is called a panel in other frameworks.
+                            </p>
+                        </div>
+                    </li><li>
+                        <time class="time">
+                            <span>octubre 2013</span>
+                            <span></span>
+                        </time>
+                        <div class="icon fa fa-globe"></div>
+                        <div class="card-panel orange darken-4">
+                            <h2 class="subtitulo">titulo</h2>
+                            <hr>
+                            <p class="flow-text">
+                                I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                                I am similar to what is called a panel in other frameworks.
+                            </p>
+                        </div>
+                    </li><li>
+                        <time class="time">
+                            <span>octubre 2013</span>
+                            <span></span>
+                        </time>
+                        <div class="icon fa fa-globe"></div>
+                        <div class="card-panel orange darken-4">
+                            <h2 class="subtitulo">titulo</h2>
+                            <hr>
+                            <p class="flow-text">
+                                I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                                I am similar to what is called a panel in other frameworks.
+                            </p>
+                        </div>
+                    </li><li>
+                        <time class="time">
+                            <span>octubre 2013</span>
+                            <span></span>
+                        </time>
+                        <div class="icon fa fa-globe"></div>
+                        <div class="card-panel orange darken-4">
+                            <h2 class="subtitulo">titulo</h2>
+                            <hr>
+                            <p class="flow-text">
+                                I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                                I am similar to what is called a panel in other frameworks.
+                            </p>
+                        </div>
+                    </li><li>
+                        <time class="time">
+                            <span>octubre 2013</span>
+                            <span></span>
+                        </time>
+                        <div class="icon fa fa-globe"></div>
+                        <div class="card-panel orange darken-4">
+                            <h2 class="subtitulo">titulo</h2>
+                            <hr>
+                            <p class="flow-text">
+                                I am a very simple card. I am good at containing small bits of information.
+                                I am convenient because I require little markup to use effectively.
+                                I am similar to what is called a panel in other frameworks.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </article>
         </section>
     </div>
 
     <!--Tab Contacto-->
     <div id="tab-contacto" class="hide container">
-        <section>
-
+        <section class="section row center animated bounceInUp">
+            <article class="col s12 m12">
+                <div class="row subtitulo">
+                    <i class="material-icons orange-text text-darken-4">email</i>
+                    <span class="flow-text orange-text"><strong> Mantengámonos en contacto</strong></span>
+                </div>
+                <p class="flow-text">Utilice el <strong class="orange-text darken-4">formulario de contacto</strong> de abajo para contactarse conmigo, contestaré
+                    tan pronto como posible y no se preocupe de solo enviarme un <strong class="orange-text darken-4">"Hola!"</strong>.
+                Espero con intrés <strong class="orange-text darken-4">escuchar</strong> de usted!</p>
+            </article>
         </section>
-        <section>
-            <div class="col s12 m8 orange darken-4 card">
-                <form id="contactForm" novalidate="novalidate">
+        <section class="row">
+            <article class="col s12 m4 animated bounceInLeft">
+                <p class="flow-text" id="texto-email">
+                    ¿Necesita un sitio web, tiene alguna pregunta o comentario? Por favor, siéntase libre de
+                    enviarme un correo electrónico o rellenar este formulario de contacto práctico.
+                    Mi objetivo es responder en un plazo de 24 horas.
+                </p>
+                <p class="flow-text contacto"><i class="fa fa-envelope prefix orange-text text-darken-4" aria-hidden="true"></i> x_jemd_x@hotmail.com</p>
+                <p class="flow-text contacto"><i class="fa fa-twitter prefix light-blue-text text-lighten-1" aria-hidden="true"></i> @Jemd_1</p>
+                <p class="flow-text contacto"><i class="fa fa-whatsapp prefix green-text" aria-hidden="true"></i> +56 9 4991 1606</p>
+            </article>
+
+            <!--Card de contacto-->
+            <article id="card-formulario" class="col s12 m8 animated bounceInRight">
+                <form class="card" id="contactForm" novalidate="novalidate">
                     <div class="card-content orange darken-4">
                         <div class="input-field">
                             <i class="material-icons prefix">account_circle</i>
@@ -147,8 +300,8 @@
                         </div>
                         <div class="input-field">
                             <i class="material-icons prefix">email</i>
-                            <input type="text" name="email" required="" data-schema-key="email">
-                            <label for="email">
+                            <input type="text" class="validate" name="email" required="" data-schema-key="email">
+                            <label data-errfor="Ingrese un email válido" for="email">
                                 Email
                             </label>
                         </div>
@@ -169,13 +322,13 @@
                     </div>
                     <div class="row card-action white">
                         <div class="col s12">
-                            <a class="orange-text" href="#">
-                                Send <i class="mdi-content-send right"></i>
+                            <a class="orange-text" id="send">
+                                Send <i class="fa fa-paper-plane" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
                 </form>
-            </div>
+            </article>
         </section>
     </div>
 

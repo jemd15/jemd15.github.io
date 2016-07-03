@@ -29,4 +29,13 @@ $(document).ready(function() {
             $(this).removeClass("tada");
         });
     });
+    $("a#send").on("click", function () {
+        $("#card-formulario").removeClass("bounceInRight");
+        $("#card-formulario").addClass("bounceOutRight");
+        $("#card-formulario").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+            $(this).removeClass("bounceOutRight");
+            $('#contactForm')[0].reset();
+            $(this).addClass("bounceInRight");
+        });
+    })
 });
