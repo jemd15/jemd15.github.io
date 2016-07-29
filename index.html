@@ -18,16 +18,28 @@
         <div class="perfil">
             <img src="app/images/perfil.jpg" class="circle responsive-img animated" alt="">
             <h4 data-unsp-sanitized="clean" class="text-white">Javier Muñoz</h4>
-            <p class="waves-effect waves-orange">Desarrollador Frontend/Apps</p>
+            <p id="subtitulo" class="waves-effect waves-orange">Desarrollador Frontend/Apps</p>
         </div>
         <hr>
         <!--navbar tab-->
         <nav>
             <div class="nav-wrapper container">
-                <ul>
-                    <li id="sobre-mi" class="active"><a class="active waves-effect waves-orange" data-unsp-sanitized="clean"><h5>Sobre mí</h5></a></li>
-                    <li id="curriculum"><a class="waves-effect waves-orange" data-unsp-sanitized="clean"><h5>Currículum</h5></a></li>
-                    <li id="contacto"><a class="waves-effect waves-orange" data-unsp-sanitized="clean"><h5>Contacto</h5></a></li>
+                <ul id="menu">
+                    <li id="sobre-mi" class="active">
+                        <a class="active waves-effect waves-orange" data-unsp-sanitized="clean">
+                            <h5>Sobre mí</h5>
+                        </a>
+                    </li>
+                    <li id="curriculum">
+                        <a class="waves-effect waves-orange" data-unsp-sanitized="clean">
+                            <h5>Currículum</h5>
+                        </a>
+                    </li>
+                    <li id="contacto">
+                        <a class="waves-effect waves-orange" data-unsp-sanitized="clean">
+                            <h5>Contacto</h5>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -50,23 +62,19 @@
                         Me gusta trabajar en sitios web y apps <strong class="orange-text lighten-1">intuitivas, minimalistas y entretenidas.</strong>
                     </p>
                 </div>
-                <div id="twitter" class="col s12 m5 animated bounceInRight">
-                    <h2 class="header indigo-text lighten-1 section-title" data-unsp-sanitized="clean">
-                            <span>
-                                <a href="https://twitter.com/Jemd_1" data-unsp-sanitized="clean">
-                                    Últimos Tweets <br><i class="fa fa-twitter"></i>
-                                </a>
-                            </span>
-                    </h2>
-                    <div class="tweet-card card-panel yellow darken-4">
-                        <span class="text-grey darken-4">
-                            <i class="fa fa-twitter twitter"></i>
-                            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad enim laboriosam nulla perferendis recusandae. Aliquid aut, consequuntur eaque."
-                        </span>
-                        <span class="ago">
-                            - 21 hours ago
-                        </span>
-                    </div>
+                <div class="col s12 m5 animated bounceInLeft">
+                    <br class="hide-on-small-only">
+                    <span class="flow-text orange-text"><strong><h4><i class="orange-text text-darken-4" id="brain"><img class="icon icons8-Brain" src="data:image/png;base64,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" width="25" height="25"></i>Conocimientos</h4></strong></span>
+                    <p class="flow-text"></p>
+                    <button class="btn orange darken-4">HTML5</button>
+                    <button class="btn orange darken-4">JQUERY</button>
+                    <button class="btn orange darken-4">JAVA</button>
+                    <button class="btn orange darken-4">C#</button>
+                    <button class="btn orange darken-4">ARDUINO</button>
+                    <button class="btn orange darken-4">CSS3</button>
+                    <button class="btn orange darken-4">GIT</button>
+                    <button class="btn orange darken-4">MYSQL</button>
+                    <button class="btn orange darken-4">LINUX</button>
                 </div>
             </div>
         </section>
@@ -75,38 +83,36 @@
         <section class="section">
             <div class="row center">
                 <div class="col s12 m4 animated bounceInLeft">
-                    <div class="card white">
-                        <div class="card-content orange darken-4 white-text waves-effect waves-orange">
-                            <span class="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                    <div class="card z-depth-2 orange darken-4">
+                        <div class="card-image waves-effect waves-orange">
+                            <a href="#"><img id="card-image-1" src="app/images/JMVChile%20-%20Web.png"></a>
+                            <span id="span-card-image-1" class="card-title hide animated"><strong class="orange-text text-darken-4">JMV Chile Web</strong></span>
                         </div>
-                        <div class="card-action">
-                            <h6 class="orange-text darken-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 animated bounceInUp">
-                    <div class="card white">
-                        <div class="card-content orange darken-4 white-text waves-effect waves-orange">
-                            <span class="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
-                        </div>
-                        <div class="card-action">
-                            <h6 class="orange-text darken-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+                        <div class="card-content">
+                            <p>Sitio web de JMV Chile, hecho con HTML5, CSS3
+                            y MATERIALIZE.CSS</p>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m4 animated bounceInRight">
-                    <div class="card white">
-                        <div class="card-content orange darken-4 white-text waves-effect waves-orange">
-                            <span class="card-title">Card Title</span>
-                            <p>I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.</p>
+                <div class="col s12 m4 animated bounceInLeft">
+                    <div class="card z-depth-2 orange darken-4">
+                        <div class="card-image waves-effect waves-orange">
+                            <a href="#"><img id="card-image-2" src="app/images/bob%20the%20robot.jpg"></a>
+                            <span id="span-card-image-2" class="card-title hide animated"><strong class="orange-text text-darken-4">Bob The Robot</strong></span>
                         </div>
-                        <div class="card-action">
-                            <h6 class="orange-text darken-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+                        <div class="card-content">
+                            <p>Robot impreso en 3d y controlado por arduino</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4 animated bounceInLeft">
+                    <div class="card z-depth-2 orange darken-4">
+                        <div class="card-image waves-effect waves-orange">
+                            <a href="#"><img id="card-image-3" src="app/images/bluetooth%20tank.jpg"></a>
+                            <span id="span-card-image-3" class="card-title hide animated"><strong class="orange-text text-darken-4">Vehículo RC Bluetooth</strong></span>
+                        </div>
+                        <div class="card-content">
+                            <p>Vehículo conectado mediante BLUETOOTH a un smartphone para ser conducido a distancia</p>
                         </div>
                     </div>
                 </div>
@@ -116,7 +122,7 @@
         <!--boton repositorio-->
         <section class="section">
             <div id="boton-github" class="row center animated bounceInRight">
-                <a href="https://github.com/jemd15"  class="btn-large waves-effect waves-light orange darken-4" data-unsp-sanitized="clean">
+                <a href="https://github.com/jemd15" class="btn-large waves-effect waves-light orange darken-4" data-unsp-sanitized="clean">
                     <i class="fa fa-github"></i> <span>Repositorio Github</span>
                 </a>
             </div>
@@ -327,9 +333,9 @@
                     </div>
                     <div class="row card-action white">
                         <div class="col s12">
-                            <a class="orange-text" id="send">
+                            <button class="btn white orange-text" id="send">
                                 Send <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                            </a>
+                            </button>
                         </div>
                     </div>
                 </form>
@@ -343,9 +349,9 @@
         <footer class="orange darken-4 z-depth-1">
             <div class="container">
                 <div class="row get-in-touch">
-                    <div class="col l12 s12">
+                    <div class="col l12 s12 m12">
                         <h5 class="white-text" data-unsp-sanitized="clean">SÍGUEME EN REDES SOCIALES</h5>
-                        <p class="grey-text text-lighten-4">
+                        <p class="grey-text text-lighten-4 col s12 m8 l8 offset-m2 offset-l2">
                             Soy muy activo en redes sociales y me encantaría hablar contigo! Sientete líbre de contactarme
                             por email, buscarme en Google Plus, seguirme en Twitter y agregarme a Facebook.
                         </p>

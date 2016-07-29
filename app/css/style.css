@@ -11,9 +11,6 @@ nav{
     border-top: 5px;
     background-color: rgba(0, 0, 0, 0.5);
 }
-nav{
-    font-size: 20px !important;
-}
 li.active{
     background-color: #e65100 !important;
 }
@@ -30,8 +27,9 @@ body{
 }
 hr{
     margin: 0;
+    margin-top: 1px;
 }
-header p{
+header #subtitulo{
     font-size: 1em;
     margin: .1em 0 .6em;
     display: inline-block;
@@ -66,12 +64,6 @@ footer p {
 #twitter h2{
     margin-bottom: -10%;
 }
-div.indicator{
-    position: relative !important;
-}
-.tabs{
-    height: auto;
-}
 div.row.card-action.white{
     margin: 0 !important;
 }
@@ -88,14 +80,11 @@ div.row.card-action.white{
     border-bottom: 1px solid white;
     box-shadow: 0 1px 0 0 whitesmoke;
 }
-hr{
-    margin-top: 1px;
-}
 div.subtitulo, h2.subtitulo{
     text-align: left;
 }
 p#texto-email{
-    font-size: 22px !important;
+    font-size: 20px !important;
 }
 #tab-curriculum button{
     margin: 3px 0;
@@ -108,4 +97,30 @@ ul.timeline span, ul.timeline {
 }
 div#twitter i{
     padding-bottom: 5px;
+}
+/*centrando la nav-bar*/
+.nav-wrapper{
+    clear:both;
+    float:left;
+    overflow:hidden;
+    width:100%;
+}
+#menu {
+    float:left;
+    left:50%;
+    list-style-type:none;
+    margin:0 auto;
+    padding:0;
+    position:relative;
+}
+#menu li {
+    float:left;
+    position:relative;
+    right:50%;
+}
+/*************************/
+.card-image span{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
 }
