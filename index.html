@@ -13,365 +13,312 @@
 </head>
 <body class="brown white-text">
 
-    <!--header-->
-    <header class="header center animated bounceInDown">
-        <div class="perfil">
-            <img src="app/images/perfil.jpg" class="circle responsive-img animated" alt="">
-            <h4 data-unsp-sanitized="clean" class="text-white">Javier Muñoz</h4>
-            <p id="subtitulo" class="waves-effect waves-orange">Desarrollador Frontend/Apps</p>
+<!--header-->
+<header class="header center animated bounceInDown">
+    <div class="perfil">
+        <img src="app/images/perfil.jpg" class="circle responsive-img animated" alt="">
+        <h4 data-unsp-sanitized="clean" class="text-white">Javier Muñoz</h4>
+        <p id="subtitulo" class="waves-effect waves-orange">Desarrollador Frontend/Apps</p>
+    </div>
+    <hr>
+    <!--navbar tab-->
+    <nav>
+        <div class="nav-wrapper container">
+            <ul id="menu">
+                <li id="sobre-mi" class="active waves-effect waves-orange">
+                    <a class="active" data-unsp-sanitized="clean">
+                        <h6>Sobre mí</h6>
+                    </a>
+                </li>
+                <li id="curriculum" class="waves-effect waves-orange">
+                    <a data-unsp-sanitized="clean">
+                        <h6>Currículum</h6>
+                    </a>
+                </li>
+                <li id="contacto" class="waves-effect waves-orange">
+                    <a data-unsp-sanitized="clean">
+                        <h6>Contacto</h6>
+                    </a>
+                </li>
+            </ul>
         </div>
-        <hr>
-        <!--navbar tab-->
-        <nav>
-            <div class="nav-wrapper container">
-                <ul id="menu">
-                    <li id="sobre-mi" class="active">
-                        <a class="active waves-effect waves-orange" data-unsp-sanitized="clean">
-                            <h5>Sobre mí</h5>
-                        </a>
-                    </li>
-                    <li id="curriculum">
-                        <a class="waves-effect waves-orange" data-unsp-sanitized="clean">
-                            <h5>Currículum</h5>
-                        </a>
-                    </li>
-                    <li id="contacto">
-                        <a class="waves-effect waves-orange" data-unsp-sanitized="clean">
-                            <h5>Contacto</h5>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <hr>
-    </header>
+    </nav>
+    <hr>
+</header>
 
-    <!--Elementos centrales-->
+<!--Elementos centrales-->
 
-    <!--Tab Sobre Mi-->
-    <div id="tab-sobre-mi" class="container">
-        <section class="section">
-            <div class="row center">
-                <div class="col s12 m7 animated bounceInLeft">
-                    <h2 class="header orange-text darken-4 section-title" data-unsp-sanitized="clean">
-                        <span><i class="mdi-hardware-keyboard-alt"></i>Sobre Mí</span>
-                    </h2>
-                    <p class="flow-text">
-                        <strong>Hola</strong><strong class="orange-text  darken-4">!</strong> Mí nombre es <strong class="orange-text  darken-4">
-                        Javier Muñoz Dunstan</strong> y soy <strong class="orange-text  darken-4">Desarrollador Frontend y de Apps</strong> de Santiago, Chile.
-                        Me gusta trabajar en sitios web y apps <strong class="orange-text lighten-1">intuitivas, minimalistas y entretenidas.</strong>
-                    </p>
-                </div>
-                <div class="col s12 m5 animated bounceInLeft">
-                    <br class="hide-on-small-only">
-                    <span class="flow-text orange-text"><strong><h4><i class="orange-text text-darken-4" id="brain"><img class="icon icons8-Brain" src="data:image/png;base64,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" width="25" height="25"></i>Conocimientos</h4></strong></span>
-                    <p class="flow-text"></p>
-                    <button class="btn orange darken-4">HTML5</button>
-                    <button class="btn orange darken-4">JQUERY</button>
-                    <button class="btn orange darken-4">JAVA</button>
-                    <button class="btn orange darken-4">C#</button>
-                    <button class="btn orange darken-4">ARDUINO</button>
-                    <button class="btn orange darken-4">CSS3</button>
-                    <button class="btn orange darken-4">GIT</button>
-                    <button class="btn orange darken-4">MYSQL</button>
-                    <button class="btn orange darken-4">LINUX</button>
-                </div>
-            </div>
-        </section>
-
-        <!--cards repositorio github-->
-        <section class="section">
-            <div class="row center">
-                <div class="col s12 m4 animated bounceInLeft">
-                    <div class="card z-depth-2 orange darken-4">
-                        <div class="card-image waves-effect waves-orange">
-                            <a href="#"><img id="card-image-1" src="app/images/JMVChile%20-%20Web.png"></a>
-                            <span id="span-card-image-1" class="card-title hide animated"><strong class="orange-text text-darken-4">JMV Chile Web</strong></span>
-                        </div>
-                        <div class="card-content">
-                            <p>Sitio web de JMV Chile, hecho con HTML5, CSS3
-                            y MATERIALIZE.CSS</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 animated bounceInLeft">
-                    <div class="card z-depth-2 orange darken-4">
-                        <div class="card-image waves-effect waves-orange">
-                            <a href="#"><img id="card-image-2" src="app/images/bob%20the%20robot.jpg"></a>
-                            <span id="span-card-image-2" class="card-title hide animated"><strong class="orange-text text-darken-4">Bob The Robot</strong></span>
-                        </div>
-                        <div class="card-content">
-                            <p>Robot impreso en 3d y controlado por arduino</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m4 animated bounceInLeft">
-                    <div class="card z-depth-2 orange darken-4">
-                        <div class="card-image waves-effect waves-orange">
-                            <a href="#"><img id="card-image-3" src="app/images/bluetooth%20tank.jpg"></a>
-                            <span id="span-card-image-3" class="card-title hide animated"><strong class="orange-text text-darken-4">Vehículo RC Bluetooth</strong></span>
-                        </div>
-                        <div class="card-content">
-                            <p>Vehículo conectado mediante BLUETOOTH a un smartphone para ser conducido a distancia</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!--boton repositorio-->
-        <section class="section">
-            <div id="boton-github" class="row center animated bounceInRight">
-                <a href="https://github.com/jemd15" class="btn-large waves-effect waves-light orange darken-4" data-unsp-sanitized="clean">
-                    <i class="fa fa-github"></i> <span>Repositorio Github</span>
-                </a>
-            </div>
-        </section>
-    </div>
-
-    <!--Tab Curriculum-->
-    <div id="tab-curriculum" class="hide container">
-
-        <!--Columna Habilidades-->
-        <section class="row section center animated bounceInUp">
-            <article class="col s12 m12">
-                <div class="row subtitulo">
-                    <i class="fa fa-file-text-o orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
-                    <span class="flow-text orange-text"><strong> Todo acerca de mí</strong></span>
-                </div>
-                <h2 class="flow-text">Bienvenido a mí línea de tiempo. Mi <strong class="orange-text">experiencia de trabajo</strong>
-                y <strong class="orange-text">educación</strong> se explican detalladamente aquí. Tómese un momento para revisarlo!</h2>
-            </article>
-        </section>
-        <section class="row section center">
-            <article class="col s12 m4">
-                <div class="row animated bounceInLeft">
-                    <i class="fa fa-file-text-o orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
-                    <span class="flow-text orange-text"><strong> Descarga mi CV</strong></span>
-                    <p class="flow-text">Si gustas, puedes descargar mi currículum</p>
-                    <button class="btn orange darken-4">DESCARGAR CV</button>
-                </div>
-                <div class="row animated bounceInLeft">
-                    <i class="fa fa-linkedin-square orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
-                    <span class="flow-text orange-text"><strong> Perfil de LINKEDIN</strong></span>
-                    <p class="flow-text">Puedes ver mi perfil de Linkedin</p>
-                    <button class="btn orange darken-4">PERFIL LINKEDIN</button>
-                </div>
-                <div class="row animated bounceInLeft">
-                    <i class="fa fa-cogs orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
-                    <span class="flow-text orange-text"><strong> Habilidades de Programación</strong></span>
-                    <p class="flow-text"></p>
-                    <button class="btn orange darken-4">HTML5</button>
-                    <button class="btn orange darken-4">JQUERY</button>
-                    <button class="btn orange darken-4">JAVA</button>
-                    <button class="btn orange darken-4">C#</button>
-                    <button class="btn orange darken-4">ARDUINO</button>
-                    <button class="btn orange darken-4">CSS3</button>
-                    <button class="btn orange darken-4">GIT</button>
-                    <button class="btn orange darken-4">MYSQL</button>
-                    <button class="btn orange darken-4">LINUX</button>
-                </div>
-                <div class="row animated bounceInLeft">
-                    <i class="fa fa-star orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
-                    <span class="flow-text orange-text"><strong> Habilidades Personales</strong></span>
-                    <p class="flow-text"></p>
-                    <button class="btn orange darken-4">LÍDER</button>
-                    <button class="btn orange darken-4">TRABAJO EN EQUIPO</button>
-                    <button class="btn orange darken-4">CREATIVO</button>
-                    <button class="btn orange darken-4">RESPONSABLE</button>
-                    <button class="btn orange darken-4">ORDENADO</button>
-                </div>
-            </article>
-
-            <!--Columna Linea de Tiempo-->
-            <article class="col s12 m8 animated bounceInRight">
-                <div class="subtitulo">
-                    <h2 class="header indigo-text lighten-1 section-title" data-unsp-sanitized="clean">
-                        <span><i class="mdi-social-school"></i>Línea de Tiempo</span>
-                    </h2>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <time class="time">
-                            <span>octubre 2013</span>
-                            <span></span>
-                        </time>
-                        <div class="icon fa fa-globe"></div>
-                        <div class="card-panel orange darken-4">
-                            <h2 class="subtitulo">titulo</h2>
-                            <hr>
-                            <p class="flow-text">
-                                I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.
-                                I am similar to what is called a panel in other frameworks.
-                            </p>
-                        </div>
-                    </li><li>
-                        <time class="time">
-                            <span>octubre 2013</span>
-                            <span></span>
-                        </time>
-                        <div class="icon fa fa-globe"></div>
-                        <div class="card-panel orange darken-4">
-                            <h2 class="subtitulo">titulo</h2>
-                            <hr>
-                            <p class="flow-text">
-                                I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.
-                                I am similar to what is called a panel in other frameworks.
-                            </p>
-                        </div>
-                    </li><li>
-                        <time class="time">
-                            <span>octubre 2013</span>
-                            <span></span>
-                        </time>
-                        <div class="icon fa fa-globe"></div>
-                        <div class="card-panel orange darken-4">
-                            <h2 class="subtitulo">titulo</h2>
-                            <hr>
-                            <p class="flow-text">
-                                I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.
-                                I am similar to what is called a panel in other frameworks.
-                            </p>
-                        </div>
-                    </li><li>
-                        <time class="time">
-                            <span>octubre 2013</span>
-                            <span></span>
-                        </time>
-                        <div class="icon fa fa-globe"></div>
-                        <div class="card-panel orange darken-4">
-                            <h2 class="subtitulo">titulo</h2>
-                            <hr>
-                            <p class="flow-text">
-                                I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.
-                                I am similar to what is called a panel in other frameworks.
-                            </p>
-                        </div>
-                    </li><li>
-                        <time class="time">
-                            <span>octubre 2013</span>
-                            <span></span>
-                        </time>
-                        <div class="icon fa fa-globe"></div>
-                        <div class="card-panel orange darken-4">
-                            <h2 class="subtitulo">titulo</h2>
-                            <hr>
-                            <p class="flow-text">
-                                I am a very simple card. I am good at containing small bits of information.
-                                I am convenient because I require little markup to use effectively.
-                                I am similar to what is called a panel in other frameworks.
-                            </p>
-                        </div>
-                    </li>
-                </ul>
-            </article>
-        </section>
-    </div>
-
-    <!--Tab Contacto-->
-    <div id="tab-contacto" class="hide container">
-        <section class="section row center animated bounceInUp">
-            <article class="col s12 m12">
-                <div class="row subtitulo">
-                    <i class="material-icons orange-text text-darken-4">email</i>
-                    <span class="flow-text orange-text"><strong> Mantengámonos en contacto</strong></span>
-                </div>
-                <p class="flow-text">Utilice el <strong class="orange-text darken-4">formulario de contacto</strong> de abajo para contactarse conmigo, contestaré
-                    tan pronto como posible y no se preocupe de solo enviarme un <strong class="orange-text darken-4">"Hola!"</strong>.
-                Espero con ánsias <strong class="orange-text darken-4">escuchar</strong> de usted!</p>
-            </article>
-        </section>
-        <section class="row">
-            <article class="col s12 m4 animated bounceInLeft">
-                <p class="flow-text" id="texto-email">
-                    ¿Necesita un <strong class="orange-text">sitio web</strong>, tiene alguna
-                    <strong class="orange-text">pregunta</strong> o <strong class="orange-text">comentario</strong>? Por favor, siéntase libre de
-                    <strong class="orange-text">enviarme</strong> un correo electrónico o <strong class="orange-text">rellenar</strong> este formulario de contacto práctico.
-                    Me comprometo a responder en un plazo de <strong class="orange-text">24 horas</strong>.
+<!--Tab Sobre Mi-->
+<div id="tab-sobre-mi" class="container">
+    <section class="section">
+        <div class="row center">
+            <div class="col s12 m7 animated bounceInLeft">
+                <h2 class="header orange-text darken-4 section-title" data-unsp-sanitized="clean">
+                    <span><i class="mdi-hardware-keyboard-alt"></i>Sobre Mí</span>
+                </h2>
+                <p class="flow-text">
+                    <strong>Hola</strong><strong class="orange-text  darken-4">!</strong> Mí nombre es <strong class="orange-text  darken-4">
+                    Javier Muñoz Dunstan</strong> y soy <strong class="orange-text  darken-4">Desarrollador Frontend y de Apps</strong> de Santiago, Chile.
+                    Me gusta trabajar en sitios web y apps <strong class="orange-text lighten-1">intuitivas, minimalistas y entretenidas.</strong>
                 </p>
-                <p class="flow-text contacto"><i class="fa fa-envelope prefix orange-text text-darken-4" aria-hidden="true"></i> x_jemd_x@hotmail.com</p>
-                <p class="flow-text contacto"><i class="fa fa-twitter prefix light-blue-text text-lighten-1" aria-hidden="true"></i> @Jemd_1</p>
-                <p class="flow-text contacto"><i class="fa fa-whatsapp prefix green-text" aria-hidden="true"></i> +56 9 4991 1606</p>
-            </article>
+            </div>
+            <div id="conocimientos" class="col s12 m5 animated bounceInRight">
+                <br class="hide-on-small-only">
+                <span class="flow-text orange-text"><strong><h4><i class="orange-text text-darken-4" id="brain"><img class="icon icons8-Brain" src="data:image/png;base64,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" width="25" height="25"></i>Conocimientos</h4></strong></span>
+                <p class="flow-text"></p>
+                <button class="btn orange darken-4 waves-effect waves-orange">HTML5</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">JQUERY</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">JAVA</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">C#</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">ARDUINO</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">CSS3</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">GIT</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">MYSQL</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">LINUX</button>
+            </div>
+        </div>
+    </section>
 
-            <!--Card de contacto-->
-            <article id="card-formulario" class="col s12 m8 animated bounceInRight">
-                <form class="card" id="contactForm" novalidate="novalidate">
-                    <div class="card-content orange darken-4">
-                        <div class="input-field">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input type="text" name="name" required="" data-schema-key="name" maxlength="50">
-                            <label for="name">
-                                Nombre
-                            </label>
-                        </div>
-                        <div class="input-field">
-                            <i class="material-icons prefix">email</i>
-                            <input type="text" class="validate" name="email" required="" data-schema-key="email">
-                            <label data-errfor="Ingrese un email válido" for="email">
-                                Email
-                            </label>
-                        </div>
-                        <div class="input-field">
-                            <i class="material-icons prefix">label</i>
-                            <input type="text" name="subject" data-schema-key="subject">
-                            <label for="subject">
-                                Asunto
-                            </label>
-                        </div>
-                        <div class="input-field">
-                            <i class="material-icons prefix">message</i>
-                            <textarea name="message" rows="5" required="" data-schema-key="message" maxlength="1000" class="materialize-textarea"></textarea>
-                            <label for="message">
-                                Mensaje
-                            </label>
-                        </div>
+    <!--cards repositorio github-->
+    <section class="section">
+        <div class="row center">
+            <div class="col s12 m4 animated bounceInLeft">
+                <div id="card-image-1" class="card z-depth-2 orange darken-4">
+                    <div class="card-image waves-effect waves-orange">
+                        <a href="#"><img src="app/images/JMVChile%20-%20Web.png"></a>
+                        <span id="span-card-image-1" class="card-title hide animated"><strong class="orange-text text-darken-4">JMV Chile Web</strong></span>
                     </div>
-                    <div class="row card-action white">
-                        <div class="col s12">
-                            <button class="btn white orange-text" id="send">
-                                Send <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </article>
-        </section>
-    </div>
-
-    <!--Footer-->
-    <div id="footer" class="animated bounceInUp">
-        <hr>
-        <footer class="orange darken-4 z-depth-1">
-            <div class="container">
-                <div class="row get-in-touch">
-                    <div class="col l12 s12 m12">
-                        <h5 class="white-text" data-unsp-sanitized="clean">SÍGUEME EN REDES SOCIALES</h5>
-                        <p class="grey-text text-lighten-4 col s12 m8 l8 offset-m2 offset-l2">
-                            Soy muy activo en redes sociales y me encantaría hablar contigo! Sientete líbre de contactarme
-                            por email, buscarme en Google Plus, seguirme en Twitter y agregarme a Facebook.
-                        </p>
-                        <div id="redes-sociales" class="follow_us">
-                            <a href="https://twitter.com/Jemd_1" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/xjemd" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-facebook"></i></a>
-                            <a href="http://www.linkedin.com/profile/view?id=138209855" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-linkedin"></i></a>
-                            <a href="https://plus.google.com/u/0/102165217347871415592/posts" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-google-plus"></i></a>
-                            <a href="https://github.com/jemd15" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-github"></i></a>
-                        </div>
+                    <div class="card-content waves-effect waves-orange">
+                        <p>Sitio web de JMV Chile, hecho con HTML5, CSS3
+                            y MATERIALIZE.CSS</p>
                     </div>
                 </div>
             </div>
-        </footer>
-        <hr>
-    </div>
+            <div class="col s12 m4 animated bounceInUp">
+                <div id="card-image-2" class="card z-depth-2 orange darken-4">
+                    <div class="card-image waves-effect waves-orange">
+                        <a href="#"><img src="app/images/bob%20the%20robot.jpg"></a>
+                        <span id="span-card-image-2" class="card-title hide animated"><strong class="orange-text text-darken-4">Bob The Robot</strong></span>
+                    </div>
+                    <div class="card-content waves-effect waves-orange">
+                        <p>Robot impreso en 3d y controlado por arduino</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m4 animated bounceInRight">
+                <div id="card-image-3" class="card z-depth-2 orange darken-4">
+                    <div class="card-image waves-effect waves-orange">
+                        <a href="#"><img src="app/images/bluetooth%20tank.jpg"></a>
+                        <span id="span-card-image-3" class="card-title hide animated"><strong class="orange-text text-darken-4">Vehículo RC Bluetooth</strong></span>
+                    </div>
+                    <div class="card-content waves-effect waves-orange">
+                        <p>Vehículo conectado mediante BLUETOOTH a un smartphone para ser conducido a distancia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--boton repositorio-->
+    <section class="section">
+        <div id="boton-github" class="row center animated bounceInRight">
+            <button href="https://github.com/jemd15" class="btn-large orange darken-4 z-depth-2 waves-effect waves-orange" data-unsp-sanitized="clean">
+                <i class="fa fa-github"></i> <span>Repositorio Github</span>
+            </button>
+        </div>
+    </section>
+</div>
+
+<!--Tab Curriculum-->
+<div id="tab-curriculum" class="hide container">
+
+    <!--Columna Habilidades-->
+    <section class="row section center animated bounceInUp">
+        <article class="col s12 m12">
+            <div class="row subtitulo">
+                <i class="fa fa-file-text-o orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
+                <span class="flow-text orange-text"><strong> Todo acerca de mí</strong></span>
+            </div>
+            <h2 class="flow-text">Bienvenido a mí línea de tiempo. Mi <strong class="orange-text">experiencia de trabajo</strong>
+                y <strong class="orange-text">educación</strong> se explican detalladamente aquí. Tómese un momento para revisarlo!</h2>
+        </article>
+    </section>
+    <section class="row section center">
+        <article class="col s12 m4">
+            <div class="row animated bounceInLeft">
+                <i class="fa fa-file-text-o orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
+                <span class="flow-text orange-text"><strong> Descarga mi CV</strong></span>
+                <p class="flow-text">Si gustas, puedes descargar mi currículum</p>
+                <button class="btn orange darken-4 waves-effect waves-orange">DESCARGAR CV</button>
+            </div>
+            <div class="row animated bounceInLeft">
+                <i class="fa fa-linkedin-square orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
+                <span class="flow-text orange-text"><strong> Perfil de LINKEDIN</strong></span>
+                <p class="flow-text">Puedes ver mi perfil de Linkedin</p>
+                <button class="btn orange darken-4 waves-effect waves-orange">PERFIL LINKEDIN</button>
+            </div>
+            <div class="row animated bounceInLeft">
+                <i class="fa fa-cogs orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
+                <span class="flow-text orange-text"><strong> Habilidades de Informáticas</strong></span>
+                <p class="flow-text"></p>
+                <button class="btn orange darken-4 waves-effect waves-orange">HTML5</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">JQUERY</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">JAVA</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">C#</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">ARDUINO</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">CSS3</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">GIT</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">MYSQL</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">LINUX</button>
+            </div>
+            <div class="row animated bounceInLeft">
+                <i class="fa fa-star orange-text text-darken-4 fa-2x" aria-hidden="true"></i>
+                <span class="flow-text orange-text"><strong> Habilidades Personales</strong></span>
+                <p class="flow-text"></p>
+                <button class="btn orange darken-4 waves-effect waves-orange">LÍDER</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">TRABAJO EN EQUIPO</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">CREATIVO</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">RESPONSABLE</button>
+                <button class="btn orange darken-4 waves-effect waves-orange">ORDENADO</button>
+            </div>
+        </article>
+
+        <!--Columna Linea de Tiempo-->
+        <article class="col s12 m8 animated bounceInRight">
+            <div class="subtitulo">
+                <h2 class="header indigo-text lighten-1 section-title" data-unsp-sanitized="clean">
+                    <span><i class="mdi-social-school"></i>Línea de Tiempo</span>
+                </h2>
+            </div>
+            <ul class="cbp_tmtimeline">
+                <li>
+                    <time class="cbp_tmtime" datetime="2016-08-08"><span>16/08/08</span></time>
+                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                    <div class="cbp_tmlabel">
+                        <h2>Curso de Android Básico</h2>
+                        <p>Me he graduado de un curso básico de programación en Android organizado por #700, Academia de
+                            Apps, Samsung e IBM.</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="2016-07-30"><span>16/07/30</span></time>
+                    <div class="cbp_tmicon cbp_tmicon-screen"></div>
+                    <div class="cbp_tmlabel">
+                        <h2>Comienzo estudios de Angular</h2>
+                        <p>Luego de participar del Angular Day organizado por la Comunidad de Programadores Chile, decidí
+                        aprender Angular para integrarlo a mis nuevos y antiguos proyectos.</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="2012"><span>2012</span></time>
+                    <div class="cbp_tmicon cbp_tmicon-mail"></div>
+                    <div class="cbp_tmlabel">
+                        <h2>Comienzo estudios de Ing. Civil Informática en Universidad San Sebastián</h2>
+                        <p>Ingreso a estudiar informática con muchas dudas y temores, pero entusiasmado de poder, en un
+                        futuro desempeñarme en lo que me apasiona.</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="2011"><span>2011</span></time>
+                    <div class="cbp_tmicon cbp_tmicon-phone"></div>
+                    <div class="cbp_tmlabel">
+                        <h2>Termino 4to medio</h2>
+                        <p>Finalizo mis estudios escolares.</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="2008"><span>2008</span></time>
+                    <div class="cbp_tmicon cbp_tmicon-earth"></div>
+                    <div class="cbp_tmlabel">
+                        <h2>Ingreso al Liceo José Victorino Lastarria</h2>
+                        <p>Este fue un gran desafio, dado el enfóque PSU que le da el establecimiento a su calidad de
+                        enseñanza.</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="1999"><span>1999</span></time>
+                    <div class="cbp_tmicon cbp_tmicon-earth"></div>
+                    <div class="cbp_tmlabel">
+                        <h2>Ingreso a Kinder en el colegio Patrocinio de San José</h2>
+                        <p>Comienzo mi proceso escolar.</p>
+                    </div>
+                </li>
+                <li>
+                    <time class="cbp_tmtime" datetime="1993-08-17"><span>93/08/17</span></time>
+                    <div class="cbp_tmicon cbp_tmicon-earth"></div>
+                    <div class="cbp_tmlabel">
+                        <h2>Comienza mi historia</h2>
+                        <p></p>
+                    </div>
+                </li>
+            </ul>
+        </article>
+    </section>
+</div>
+
+<!--Tab Contacto-->
+<div id="tab-contacto" class="hide container">
+    <section class="section row center animated bounceInUp">
+        <article class="col s12 m12">
+            <div class="row subtitulo">
+                <i class="material-icons orange-text text-darken-4">email</i>
+                <span class="flow-text orange-text"><strong> Mantengámonos en contacto</strong></span>
+            </div>
+            <p class="flow-text" id="texto-email">
+                ¿Necesita un <strong class="orange-text">sitio web</strong>, tiene alguna
+                <strong class="orange-text">pregunta</strong> o <strong class="orange-text">comentario</strong>? Por favor,
+                siéntase libre de <strong class="orange-text">enviarme</strong> un correo electrónico o
+                <strong class="orange-text">contactarme</strong> en mis <strong class="orange-text">redes sociales</strong>.
+            </p>
+        </article>
+        <article class="col s12 m3 l3">
+            <p class="flow-text contacto"><i class="fa fa-envelope prefix orange-text text-darken-4" aria-hidden="true"></i> x_jemd_x@hotmail.com</p>
+            <p class="flow-text contacto"><i class="fa fa-twitter prefix light-blue-text text-lighten-1" aria-hidden="true"></i> @Jemd_1</p>
+            <p class="flow-text contacto"><i class="fa fa-whatsapp prefix green-text" aria-hidden="true"></i> +56 9 4991 1606</p>
+        </article>
+        <article class="col s12 m9 l9">
+            <div id="redes-sociales-contacto" class="follow_us redes-sociales-contacto">
+                <a href="https://twitter.com/Jemd_1" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/xjemd" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-facebook"></i></a>
+                <a href="http://www.linkedin.com/profile/view?id=138209855" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-linkedin"></i></a>
+                <a href="#" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-instagram"></i></a>
+                <a href="https://plus.google.com/u/0/102165217347871415592/posts" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-google-plus"></i></a>
+                <a href="https://github.com/jemd15" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-github"></i></a>
+            </div>
+        </article>
+    </section>
+</div>
+
+<!--Footer-->
+<div id="footer" class="animated bounceInUp">
+    <hr>
+    <footer class="orange darken-4 z-depth-1">
+        <div class="container">
+            <div class="row get-in-touch">
+                <div class="col l12 s12 m12">
+                    <h5 class="white-text" data-unsp-sanitized="clean">SÍGUEME EN REDES SOCIALES</h5>
+                    <p class="grey-text text-lighten-4 col s12 m8 l8 offset-m2 offset-l2">
+                        Soy muy activo en redes sociales y me encantaría hablar contigo! Sientete líbre de contactarme
+                        por email, buscarme en Google Plus, seguirme en Twitter y agregarme a Facebook.
+                    </p>
+                    <div class="follow_us redes-sociales">
+                        <a href="https://twitter.com/Jemd_1" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/xjemd" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-facebook"></i></a>
+                        <a href="http://www.linkedin.com/profile/view?id=138209855" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-linkedin"></i></a>
+                        <a href="#" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-instagram"></i></a>
+                        <a href="https://plus.google.com/u/0/102165217347871415592/posts" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-google-plus"></i></a>
+                        <a href="https://github.com/jemd15" target="_blank" data-unsp-sanitized="clean"><i class="fa fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <hr>
+</div>
 
 
-    <script src="app/lib/jquery/dist/jquery.min.js"></script>
-    <script src="app/lib/Materialize/dist/js/materialize.min.js"></script>
-    <script src="app/js/script.js"></script>
+<script src="app/lib/jquery/dist/jquery.min.js"></script>
+<script src="app/lib/Materialize/dist/js/materialize.min.js"></script>
+<script src="app/js/script.js"></script>
 </body>
 </html>
