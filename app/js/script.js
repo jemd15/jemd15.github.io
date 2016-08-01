@@ -113,7 +113,4 @@ $(document).ready(function() {
                     .removeClass(animacion);
             });
     });
-
-    /*timeline vertical*/
-    
 });
