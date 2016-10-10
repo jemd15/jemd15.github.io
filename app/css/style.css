@@ -17,6 +17,8 @@ li.active{
 img.circle.responsive-img {
     width: 10%;
     height: auto;
+    border: 5px solid;
+    border-color: white;
 }
 body{
     background-image: url("../images/fondo.jpg");
