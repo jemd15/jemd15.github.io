@@ -7,6 +7,9 @@ header{
 .perfil{
     padding-top: 8.4px;
 }
+#conocimientos{
+    padding-right: 0;
+}
 nav{
     border-top: 5px;
     background-color: rgba(0, 0, 0, 0.5);
